@@ -1,0 +1,238 @@
+:root {
+    --background-blue: #D6E6FF;
+    --font-blue: #3F9AEE;
+    --light-yellow: #FFFFEA;
+    --light-green: #D7F9F8;
+    font-family: monospace, sans-serif;
+}
+
+.homepage-container {
+    background-color: var(--background-blue);
+    height: 100vh;
+}
+
+.title {
+    margin: 0;
+    padding: 50px 0;
+    text-align: center;
+    font-size: 4rem;
+    color: var(--font-blue);
+}
+
+.description-container {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.description-top, .description-bot {
+    padding: 20px;
+    border-radius: 12px;
+    width: 60%;
+}
+
+.description-top {
+    background-color: var(--light-green);
+}
+
+.description-bot {
+    background-color: var(--light-yellow);
+}
+
+.description-top:hover, .description-bot:hover {
+    transform: scale(1.05);
+    transform-origin:center;
+    transition-duration: 0.5s;
+}
+
+.description-top h2 {
+    margin: 0;
+    color: var(--font-blue);
+}
+
+.description-bot h3 {
+    margin: 0;
+    color: var(--font-blue);
+}
+
+.club-pic {
+    width: 400px;
+    position: absolute;
+    top: 60px;
+    right: 50px;
+    transform: rotate(20deg);
+    background: linear-gradient(rgba(104, 44, 177, 0.5), rgba(41, 119, 187, 0.3)) fixed;
+    border-radius: 12px;
+    transition: 300ms ease-in-out;
+}
+
+.club-pic:hover {
+    transform: scale(1.05);
+    transform-origin:center;
+    transition-duration: 0.5s;
+}
+
+.waves1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.waves1 svg {
+    position: relative;
+    display: block;
+    width: calc(286% + 1.3px);
+    height: 500px;
+}
+
+.waves1 .shape-fill {
+    fill: #D7F9F8;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons {
+    position: absolute;
+    z-index: 1;
+    bottom: 100px;
+}
+
+.browse-btn, .admin-login-btn {
+    background-color: var(--light-yellow);
+    padding: 30px;
+    font-size: 2rem;
+    color: var(--font-blue);
+    margin: 10px;
+    border: none;
+    border-radius: 12px;
+}
+
+.browse-btn:hover, .admin-login-btn:hover {
+    background-color: rgb(245, 237, 134);
+    cursor: pointer;
+}
+
+.light {
+    z-index: 0;
+    position: absolute;
+    width: 0px;
+    opacity: .75;
+    box-shadow: rgb(224, 168, 224) 0px 0px 20px 2px;
+    opacity: 0;
+    top: 100vh;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+}
+
+.x1{
+    -webkit-animation: floatUp 4s infinite linear;
+    -moz-animation: floatUp 4s infinite linear;
+    -o-animation: floatUp 4s infinite linear;
+    animation: floatUp 4s infinite linear;
+     -webkit-transform: scale(1.0);
+     -moz-transform: scale(1.0);
+     -o-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+  
+  .x2{
+    -webkit-animation: floatUp 7s infinite linear;
+    -moz-animation: floatUp 7s infinite linear;
+    -o-animation: floatUp 7s infinite linear;
+    animation: floatUp 7s infinite linear;
+    -webkit-transform: scale(1.6);
+    -moz-transform: scale(1.6);
+    -o-transform: scale(1.6);
+    transform: scale(1.6);
+    left: 15%;
+  }
+  
+  .x3{
+    -webkit-animation: floatUp 2.5s infinite linear;
+    -moz-animation: floatUp 2.5s infinite linear;
+    -o-animation: floatUp 2.5s infinite linear;
+    animation: floatUp 2.5s infinite linear;
+    -webkit-transform: scale(.5);
+    -moz-transform: scale(.5);
+    -o-transform: scale(.5);
+    transform: scale(.5);
+    left: 30%;
+  }
+  
+  .x4{
+    -webkit-animation: floatUp 4.5s infinite linear;
+    -moz-animation: floatUp 4.5s infinite linear;
+    -o-animation: floatUp 4.5s infinite linear;
+    animation: floatUp 4.5s infinite linear;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    left: 90%;
+  }
+  
+  .x5{
+    -webkit-animation: floatUp 8s infinite linear;
+    -moz-animation: floatUp 8s infinite linear;
+    -o-animation: floatUp 8s infinite linear;
+    animation: floatUp 8s infinite linear;
+    -webkit-transform: scale(2.2);
+    -moz-transform: scale(2.2);
+    -o-transform: scale(2.2);
+    transform: scale(2.2);
+    left: -57%;
+  }
+  
+  .x6{
+    -webkit-animation: floatUp 3s infinite linear;
+    -moz-animation: floatUp 3s infinite linear;
+    -o-animation: floatUp 3s infinite linear;
+    animation: floatUp 3s infinite linear;
+    -webkit-transform: scale(.8);
+    -moz-transform: scale(.8);
+    -o-transform: scale(.8);
+    transform: scale(.8);
+    left: -81%;
+  }
+
+
+@-webkit-keyframes floatUp{
+    0%{top: 100vh; opacity: 0;}
+    25%{opacity: 1;}
+    50%{top: 0vh; opacity: .8;}
+    75%{opacity: 1;}
+    100%{top: -100vh; opacity: 0;}
+}
+  
+@-moz-keyframes floatUp{
+    0%{top: 100vh; opacity: 0;}
+    25%{opacity: 1;}
+    50%{top: 0vh; opacity: .8;}
+    75%{opacity: 1;}
+    100%{top: -100vh; opacity: 0;}
+}
+  
+@-o-keyframes floatUp{
+    0%{top: 100vh; opacity: 0;}
+    25%{opacity: 1;}
+    50%{top: 0vh; opacity: .8;}
+    75%{opacity: 1;}
+    100%{top: -100vh; opacity: 0;}
+}
+  
+@keyframes floatUp{
+    0%{top: 100vh; opacity: 0;}
+    25%{opacity: 1;}
+    50%{top: 0vh; opacity: .8;}
+    75%{opacity: 1;}
+    100%{top: -100vh; opacity: 0;}
+}
