@@ -1,0 +1,16 @@
+:root {
+    --background-blue: #D6E6FF;
+    --font-blue: #3F9AEE;
+    --light-yellow: #FFFFEA;
+    --light-green: #D7F9F8;
+    font-family: monospace, sans-serif;
+}
+
+.browse-container {
+    height: 100vh;
+    background-color: var(--background-blue);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
