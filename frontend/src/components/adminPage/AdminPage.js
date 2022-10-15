@@ -2,6 +2,7 @@ import './adminpage.css';
 import { Link } from 'react-router-dom';
 
 export const AdminPage = (props) => {
+
     return (
         <div className='adminpage-container'>
             <Link to='/' className='title'>Clubify</Link>
