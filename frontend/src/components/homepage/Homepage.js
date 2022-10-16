@@ -1,5 +1,6 @@
 import './homepage.css';
 import clubPic from './club-pic.png';
+import calendar from './calendar.png';
 import { Link } from 'react-router-dom';
 
 export const Homepage = (props) => {
@@ -9,12 +10,16 @@ export const Homepage = (props) => {
             <Link to='/' className='title'>Clubify</Link>
             <div className='description-container'>
                 <div className='description-top'>
-                  <h2>Want to get involved at uoft? Don’t know where to get started?</h2>
+                  <h2>Want to get involved at UTSC? Don’t know where to get started?</h2>
                 </div>
                 <div className='description-bot'>
                   <h3>The one platform for all clubs uoft related.</h3>
                 </div>
             </div>
+            <div className='slogan'>
+                Unify With Clubify
+            </div>
+            <img className="calendar" src={calendar} alt="Calendar"></img>
             <div className='buttons-container'>
                 <div className='buttons'>
                     <Link className='browse-btn' to='/browse'><em>Browse</em></Link>

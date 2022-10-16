@@ -34,6 +34,7 @@
     padding: 20px;
     border-radius: 12px;
     width: 60%;
+    z-index: 100;
 }
 
 .description-top {
@@ -123,4 +124,30 @@
 .browse-btn:hover, .admin-login-btn:hover {
     background-color: rgb(245, 237, 134);
     cursor: pointer;
+}
+
+.slogan {
+    color: var(--font-blue);
+    position: absolute;
+    top: 70%;
+    z-index: 2;
+    font-size: 3rem;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.calendar {
+    width: 300px;
+    position: absolute;
+    left: 0;
+    bottom: 30%;
+    transform: rotate(-20deg);
+    transition: 300ms ease-in-out;
+    z-index: 1000;
+}
+
+.calendar:hover {
+    transform: scale(1.05);
+    transform-origin:center;
+    transition-duration: 0.5s;
 }
