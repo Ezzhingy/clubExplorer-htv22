@@ -5,7 +5,8 @@ import { Homepage } from './components/homepage/Homepage';
 import { BrowsePage } from './components/browsePage/BrowsePage';
 import { AdminPage } from './components/adminPage/AdminPage';
 
-function App() {
+const App = () => {
+
   return (
     <div className="App">
       <Routes>
