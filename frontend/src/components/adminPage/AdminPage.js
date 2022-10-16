@@ -8,7 +8,7 @@ export const AdminPage = (props) => {
             <Link to='/' className='title'>Clubify</Link>
             <form className='admin-form' action="/api/addrec_club" method='POST'>
                 <div className='input-container'>
-                    <label htmlFor='name'>Name</label>
+                    <label htmlFor='name'>Club Name</label>
                     <input type='text' id='name' name='input-name' required />
                 </div>
                 <div className='categories-container'>

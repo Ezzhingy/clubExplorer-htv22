@@ -18,7 +18,21 @@ export const BrowsePage = (props) => {
 
     return (
         <div className='browse-container'>
-            <Link to='/' className='title'>Clubify</Link>
+            <ul className="bg-bubbles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div className='title-container'>
+                <Link to='/' className='title'>Clubify</Link>
+            </div>
             <header className="App-header">
                 {data.map((user, i) => (
                     <React.Fragment key={i}>

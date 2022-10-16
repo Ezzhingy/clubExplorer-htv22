@@ -3,7 +3,7 @@ import clubPic from './club-pic.png';
 import { Link } from 'react-router-dom';
 
 export const Homepage = (props) => {
-
+    
     return (
         <div className='homepage-container'>
             <Link to='/' className='title'>Clubify</Link>
