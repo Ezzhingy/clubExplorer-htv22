@@ -16,19 +16,20 @@ export const BrowsePage = (props) => {
         );
     }, []);
 
-    console.log(data)
-
     return (
         <div className='browse-container'>
             <Link to='/' className='title'>Clubify</Link>
             <header className="App-header">
                 {data.map((user, i) => (
                     <React.Fragment key={i}>
-                        <p>{user[0]}</p>
-                        <p>{user[1]}</p>
-                        <p>{user[2]}</p>
-                        <p>{user[3]}</p>
-                        <p>{user[4]}</p>
+                        <div className='container'>
+                            <p>{user[0]}</p>
+                            <p>{user[1]}</p>
+                            <p>{user[2]}</p>
+                            <p>{user[3]}</p>
+                            <p>{user[4]}</p>
+                        </div>
+ 
                     </React.Fragment>
                 ))}
             </header>

@@ -34,23 +34,23 @@ export const AdminPage = (props) => {
                     <label className='members-title'>Number of Members</label>
                     <div className='radio-containers'>
                         <label htmlFor='members0'>Less than 25</label>
-                        <input type='radio' id='members0' name='same-member' defaultChecked></input>
+                        <input type='radio' id='members0' name='same-member' value='Less than 25' defaultChecked></input>
                     </div>
                     <div className='radio-containers'>
                         <label htmlFor='members1'>25-50</label>
-                        <input type='radio' id='members1' name='same-member'></input>
+                        <input type='radio' id='members1' name='same-member' value='25-50'></input>
                     </div>
                     <div className='radio-containers'>
                         <label htmlFor='members2'>50-75</label>
-                        <input type='radio' id='members2' name='same-member'></input>
+                        <input type='radio' id='members2' name='same-member' value='50-75'></input>
                     </div>
                     <div className='radio-containers'>
                         <label htmlFor='members3'>75-100</label>
-                        <input type='radio' id='members3' name='same-member'></input>
+                        <input type='radio' id='members3' name='same-member' value='75-100'></input>
                     </div>
                     <div className='radio-containers'>
                         <label htmlFor='members4'>Greater than 100</label>
-                        <input type='radio' id='members4' name='same-member'></input>
+                        <input type='radio' id='members4' name='same-member' value='Greater than 100'></input>
                     </div>
                 </div>
                 <div className='input-container'>

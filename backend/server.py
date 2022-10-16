@@ -3,17 +3,6 @@ import sqlite3 as sql
 
 app = Flask(__name__)
 
-# @app.route('/api/data')
-# def get_time():
-  
-#     # Returning an api for showing in reactjs
-#     return {
-#         'name':"geek", 
-#         "age":"22",
-#         "programming":"python"
-#         }
-
-
 @app.route('/api/addrec_club', methods=['POST'])
 def addrec_club():
     if request.method=='POST':
