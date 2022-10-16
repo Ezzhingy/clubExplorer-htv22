@@ -1,10 +1,37 @@
 import './browsepage.css';
 import { Link } from 'react-router-dom';
+import React, { Fragment, useState, useEffect } from "react";
 
 export const BrowsePage = (props) => {
+    const [data, setData] = useState([]);
+
+    // Using useEffect for single rendering
+    useEffect(() => {
+        // Using fetch to fetch the api from 
+        // flask server it will be redirected to proxy
+        fetch("/api/list_club").then((res) =>
+            res.json().then((rows) => {
+                setData(rows)
+            })
+        );
+    }, []);
+
+    console.log(data)
+
     return (
         <div className='browse-container'>
             <Link to='/' className='title'>Clubify</Link>
+            <header className="App-header">
+                {data.map((user, i) => (
+                    <React.Fragment key={i}>
+                        <p>{user[0]}</p>
+                        <p>{user[1]}</p>
+                        <p>{user[2]}</p>
+                        <p>{user[3]}</p>
+                        <p>{user[4]}</p>
+                    </React.Fragment>
+                ))}
+            </header>
         </div>
     )
 }

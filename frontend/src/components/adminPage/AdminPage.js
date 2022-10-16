@@ -6,28 +6,28 @@ export const AdminPage = (props) => {
     return (
         <div className='adminpage-container'>
             <Link to='/' className='title'>Clubify</Link>
-            <form className='admin-form'>
+            <form className='admin-form' action="/api/addrec_club" method='POST'>
                 <div className='input-container'>
                     <label htmlFor='name'>Name</label>
-                    <input type='text' id='name' required />
+                    <input type='text' id='name' name='input-name' required />
                 </div>
                 <div className='categories-container'>
                     <label className='categories-title'>Categories</label>
                     <div className='check-container'>
                         <label htmlFor='categories0'>Athletics</label>
-                        <input type='checkbox' id='categories0' name='same-category' defaultChecked></input>
+                        <input type='radio' id='categories0' name='same-category' value='Athletics' defaultChecked></input>
                     </div>
                     <div className='check-container'>
                         <label htmlFor='categories1'>Academic</label>
-                        <input type='checkbox' id='categories1' name='same-category'></input>
+                        <input type='radio' id='categories1' name='same-category' value='Academic'></input>
                     </div>
                     <div className='check-container'>
                         <label htmlFor='categories2'>Arts</label>
-                        <input type='checkbox' id='categories2' name='same-category'></input>
+                        <input type='radio' id='categories2' name='same-category' value='Arts'></input>
                     </div>
                     <div className='check-container'>
                         <label htmlFor='categories3'>Culture</label>
-                        <input type='checkbox' id='categories3' name='same-category'></input>
+                        <input type='radio' id='categories3' name='same-category' value='Culture'></input>
                     </div>                      
                 </div>
                 <div className='members-container'>
@@ -55,11 +55,11 @@ export const AdminPage = (props) => {
                 </div>
                 <div className='input-container'>
                     <label htmlFor='email'>Email</label>
-                    <input id='email' type='email' required></input>
+                    <input id='email' type='email' name='input-email' required></input>
                 </div>
                 <div className='input-container'>
                     <label htmlFor='phone-number'>Phone Number</label>
-                    <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="phone-number" placeholder='123-456-7890' required></input>
+                    <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name='input-phone' id="phone-number" placeholder='123-456-7890' required></input>
                 </div>
                 <button>Add Club</button>
             </form>
